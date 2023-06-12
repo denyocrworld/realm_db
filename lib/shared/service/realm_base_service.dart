@@ -11,7 +11,7 @@ class RealmBaseService<T extends RealmObject> {
 
   syncronize() async {
     print("syncronize running..");
-    if (Config.disconnectedMode == false) {
+    if (RealmDBConfig.disconnectedMode == false) {
       for (var subscription in realm.subscriptions) {
         if (subscription.name!.contains("${this}Subscription")) {
           return;
@@ -21,7 +21,7 @@ class RealmBaseService<T extends RealmObject> {
 
     String queryAllName = "${this}Subscription";
     print("$queryAllName is created!");
-    if (Config.disconnectedMode == false) {
+    if (RealmDBConfig.disconnectedMode == false) {
       realm.subscriptions.update((mutableSubscriptions) {
         mutableSubscriptions.add(
           realm.all<T>(),

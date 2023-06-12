@@ -49,3 +49,30 @@ DB.instance.delete<Product>(item);
 ```
 DB.instance.deleteAll<Product>();
 ```
+
+### Auth
+
+#### Login
+```
+await AuthService.instance.login(
+    email: "admin@demo.com",
+    password: "123456",
+);
+```
+#### Logout
+```
+await AuthService.instance.logout();
+```
+
+#### Check Login Status
+```
+await AuthService.instance.isLoggedIn();
+```
+
+#### Register
+```
+await AuthService.instance.register(
+    email: "admin@demo.com",
+    password: "123456",
+);
+```

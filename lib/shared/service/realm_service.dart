@@ -8,10 +8,10 @@ class RealmService {
   static late AppConfiguration appConfiguration;
   static init() {
     Map realmConfig = {
-      "appId": Config.appId,
-      "appUrl": Config.appUrl,
-      "baseUrl": Config.baseUrl,
-      "dataSourceName": Config.dataSourceName,
+      "appId": RealmDBConfig.appId,
+      "appUrl": RealmDBConfig.appUrl,
+      "baseUrl": RealmDBConfig.baseUrl,
+      "dataSourceName": RealmDBConfig.dataSourceName,
     };
 
     String appId = realmConfig["appId"];

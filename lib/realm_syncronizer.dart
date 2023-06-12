@@ -34,7 +34,7 @@ class RealmSyncronizer {
       // schemaList,
     ));
     print("syncronize running..");
-    if (Config.disconnectedMode == false) {
+    if (RealmDBConfig.disconnectedMode == false) {
       for (var subscription in realmInstance.subscriptions) {
         if (subscription.name!.contains("${DateTime.now()}Subscription")) {
           return;
