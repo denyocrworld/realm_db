@@ -29,7 +29,7 @@ class RealmSyncronizer {
     realmInstance = Realm(Configuration.disconnectedSync(
       schemaList,
       // path: "${Directory.current.path}\\local_realm",
-      path: "${path.path}\\xxx",
+      path: "${path.path}\\realm_temp",
       // AuthService.currentUser!,
       // schemaList,
     ));
