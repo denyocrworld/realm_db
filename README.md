@@ -1,5 +1,5 @@
 ### Realm DB
-
+---
 #### Initialize
 ```
 void main() async {
@@ -48,7 +48,7 @@ DB.instance.deleteAll<Product>();
 ```
 
 ### Auth
-
+---
 #### Login
 ```
 await AuthService.instance.login(
