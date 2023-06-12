@@ -1,4 +1,8 @@
 ### Realm DB
+A class to make it easier to use Realm in Flutter.
+Under Development.
+Currently only available for disconnected mode.
+
 ---
 #### Initialize
 ```

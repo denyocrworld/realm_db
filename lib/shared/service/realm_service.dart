@@ -2,6 +2,7 @@ import 'package:realm/realm.dart';
 import 'package:realm_db/shared/util/config.dart';
 
 import '../../realm_syncronizer.dart';
+import 'auth_service.dart';
 
 class RealmService {
   static late App app;
@@ -21,14 +22,10 @@ class RealmService {
 
   static bool syncronized = false;
   static Future syncronizeAll() async {
-    print("currentUser: ${AuthService.currentUser}");
-    if (AuthService.currentUser == null) return;
+    if (AuthService.instance.currentUser == null) return;
     syncronized = false;
     await RealmSyncronizer.syncronize();
-    print("syncronized!!!");
     syncronized = true;
-
-    await UserProfileService.instance.initUserProfile();
     return true;
   }
 }
