@@ -10,7 +10,7 @@ void main() async {
   runApp(const MyApp());
 }
 ```
-Get Data
+#### Get Data
 ```
 DB.instance.get<Product>(
     query: "",
@@ -18,7 +18,7 @@ DB.instance.get<Product>(
 ) as RealmResults<Product>
 ```
 
-Get Snapshot
+#### Get Snapshot
 ```
 DB.instance.snapshot<Product>(
     query: query,
@@ -26,12 +26,12 @@ DB.instance.snapshot<Product>(
 )
 ```
 
-Create
+#### Create
 ```
 DB.instance.add<Product>(item)
 ```
 
-Update
+#### Update
 ```
 DB.instance.update<Product>(item, (current, item) {
     current.productName = item.productName;
@@ -39,12 +39,12 @@ DB.instance.update<Product>(item, (current, item) {
 })
 ```
 
-Delete
+#### Delete
 ```
 DB.instance.delete<Product>(item);
 ```
 
-Delete All
+#### Delete All
 ```
 DB.instance.deleteAll<Product>();
 ```
