@@ -4,6 +4,12 @@ Under Development.
 Currently only available for disconnected mode.
 
 ---
+
+### Install Package
+```
+flutter pub add realm_db
+```
+
 #### Initialize
 ```
 void main() async {
