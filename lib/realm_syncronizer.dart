@@ -8,19 +8,19 @@ class RealmSyncronizer {
   static Future syncronize() async {
     RealmSyncronizer.schemaList = [
       //@model
-      UserProfile.schema,
-      VendorServiceItem.schema,
-      VendorStaffItem.schema,
-      VendorGalleryItem.schema,
-      VendorReviewItem.schema,
-      Vendor.schema,
-      Order.schema,
-      UserFavoriteVendor.schema,
-      ExampleUser.schema,
-      Supplier.schema,
-      Employee.schema,
-      Project.schema,
-      Drill.schema,
+      // // UserProfile.schema,
+      // // VendorServiceItem.schema,
+      // // VendorStaffItem.schema,
+      // // VendorGalleryItem.schema,
+      // // VendorReviewItem.schema,
+      // // Vendor.schema,
+      // // Order.schema,
+      // // UserFavoriteVendor.schema,
+      // // ExampleUser.schema,
+      // // Supplier.schema,
+      // // Employee.schema,
+      // // Project.schema,
+      // // Drill.schema,
       //:@model
     ];
 
@@ -43,19 +43,19 @@ class RealmSyncronizer {
     }
 
     //@syncronizer
-    await UserProfileService.instance.syncronize();
-    await VendorService.instance.syncronize();
-    await VendorGalleryItemService.instance.syncronize();
-    await VendorReviewItemService.instance.syncronize();
-    await VendorServiceItemService.instance.syncronize();
-    await VendorStaffItemService.instance.syncronize();
-    await OrderService.instance.syncronize();
-    await UserFavoriteVendorService.instance.syncronize();
-    await ExampleUserService.instance.syncronize();
-    await SupplierService.instance.syncronize();
-    await EmployeeService.instance.syncronize();
-    await ProjectService.instance.syncronize();
-    await DrillService.instance.syncronize();
+    // // await UserProfileService.instance.syncronize();
+    // // await VendorService.instance.syncronize();
+    // // await VendorGalleryItemService.instance.syncronize();
+    // // await VendorReviewItemService.instance.syncronize();
+    // // await VendorServiceItemService.instance.syncronize();
+    // // await VendorStaffItemService.instance.syncronize();
+    // // await OrderService.instance.syncronize();
+    // // await UserFavoriteVendorService.instance.syncronize();
+    // // await ExampleUserService.instance.syncronize();
+    // // await SupplierService.instance.syncronize();
+    // // await EmployeeService.instance.syncronize();
+    // // await ProjectService.instance.syncronize();
+    // // await DrillService.instance.syncronize();
     //:@syncronizer
   }
 }
