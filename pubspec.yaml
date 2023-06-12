@@ -1,13 +1,14 @@
 name: realm_db
 description: A DB class that simplifies the usage of Realm.
 version: 0.0.1
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/denyocrworld/realm_db
 
 environment:
   sdk: ^3.0.1
 
 # Add regular dependencies here.
 dependencies:
+  realm: ^1.2.0
   # path: ^1.8.0
 
 dev_dependencies:
