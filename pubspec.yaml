@@ -8,6 +8,7 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
+  path_provider: ^2.0.15
   realm: ^1.2.0
   # path: ^1.8.0
 
