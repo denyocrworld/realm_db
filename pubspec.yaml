@@ -1,6 +1,6 @@
 name: realm_db
 description: A DB class that simplifies the usage of Realm.
-version: 0.0.1
+version: 0.0.3
 repository: https://github.com/denyocrworld/realm_db
 
 environment:
